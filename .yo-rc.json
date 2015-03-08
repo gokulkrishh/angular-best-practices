@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Angular.js BestPractises",
+    "packageVersion": "0.0.1",
+    "revealTheme": "night",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "gokulkrishh",
+    "githubRepository": "angular-best-practises"
+  }
+}
