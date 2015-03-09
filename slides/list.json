@@ -1,7 +1,13 @@
 [
-  "index.md",
-  [
-    "folder-structure.html",
-    "folder-structure-1.html"
-  ]
+    "index.md",
+    [
+        "folder-structure.html",
+        "folder-structure-1.html",
+        "modularity.html",
+        "modularity-1.html"
+    ],
+    [
+        "dependency-injection.html",
+        "advantages-of-di.html"
+    ]
 ]
