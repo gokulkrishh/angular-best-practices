@@ -1,0 +1,27 @@
+<h2>Dependency Injection</h2>
+<p>Dependency Injection (DI) is very powerful concept.</p>
+
+<ol>
+	<li>DI is passing of a dependency (Service) to a client (Controller), rather than allowing a client to build or find the service.</li>
+</ol>
+
+<pre><code data-trim contenteditable>
+//Creating app module
+var app = angular.module('appName', []);
+
+//Creating a controller
+app.controller('mainCtrl', ['$scope', myService', function ($scope, myService) {
+  myService.hello('Gokul'); //will alert Hello Gokul
+}]);
+
+//Creating a service
+app.service('myService', ['$http', function ($http) {
+  this.hello = function (name) {
+    alert('Hello ' + name);
+  };
+}]);
+</code></pre>
+
+<ol>
+	<li></li>
+</ol>
