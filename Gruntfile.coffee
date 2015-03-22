@@ -83,8 +83,8 @@ module.exports = (grunt) ->
 
             options:
                 dir: 'dist'
-                commit: false
-                push: false
+                commit: true
+                push: true
                 message: 'Built from %sourceCommit% on branch %sourceBranch%'
             pages:
                 options:
