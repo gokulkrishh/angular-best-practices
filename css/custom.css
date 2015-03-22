@@ -1,0 +1,30 @@
+/*====================================
+	CUSTOM STYLES
+======================================*/
+
+/* text color */
+.red-txt {
+	color: #F00;
+}
+
+.green-txt {
+	color: #008000;
+}
+
+/* list styles  */
+
+.numeric li {
+	list-style-type: lower-hexadecimal;
+}
+
+/* alignments */
+
+.align-left {
+	text-align: left;
+}
+
+/* colors */
+
+.link-black {
+	color: #212121;
+}

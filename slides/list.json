@@ -2,12 +2,29 @@
     "index.md",
     [
         "folder-structure.html",
+        "generator-install.html",
         "folder-structure-1.html",
         "modularity.html",
         "modularity-1.html"
     ],
+    "main-components.html",
     [
-        "dependency-injection.html",
-        "advantages-of-di.html"
-    ]
+        "scope.html",
+        "scope-understand.html",
+        "scope-1.html",
+        "scope-2.html",
+        "scope-3.html",
+        "scope-4.html"
+    ],
+    [
+        "controller.html",
+        "controllers-1.html",
+        "controllers-2.html",
+        "controller-5.html",
+        "controllers-3.html",
+        "controllers-4.html"
+    ],
+    "services.html",
+    "directives.html",
+    "filters.html"
 ]

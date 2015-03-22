@@ -1,0 +1,42 @@
+<h2>How scope works</h2>
+
+<ul>
+	<li>A child scope normally inherits from its parent.</li>
+	<li>When nested scopes are involved, do not bind input directly to members of the scope.</li>
+</ul>
+
+<br>
+<br>
+
+<p><span class="red-txt">BAD:</span> $scope.name = 'gokul';</p>
+<p><span class="green-txt">BETTER:</span> $scope.user = { name: 'gokul' }</p>
+
+<br>
+
+<pre><code data-trim contenteditable>
+
+//BAD
+<input type="email" ng-model="email"> 
+//Setting 1st level member are directly set in childscope, without affecting parent scope.
+
+//GOOD
+<input type="email" ng-model="user.email">
+/*
+Using (user.email) the member user is read from parent scope, 
+so accessing the email access the correct target
+*/
+
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+

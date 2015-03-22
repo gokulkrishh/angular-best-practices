@@ -15,7 +15,7 @@
 
 			<link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
 			
-			<link rel="stylesheet" href="../css/custom.css">
+			<link rel="stylesheet" href="css/custom.css">
 
 			<link rel="stylesheet" href="bower_components/reveal-highlight-themes/styles/monokai_sublime.css" id="highlight-theme">
 
@@ -90,13 +90,9 @@
 						// { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 						{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
 
-						{ src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+						{ src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]', '[data-transition]' ); } }
 					]
 				});
 			</script>
-			<!-- controldeck.js 
-			<script src="http://controldeck.aws.af.cm/socket.io/socket.io.js"></script>
-			<script src="http://controldeck.aws.af.cm/controldeck-slides.js"></script>
-			-->
 	</body>
 </html>

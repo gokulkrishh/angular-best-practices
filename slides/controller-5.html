@@ -1,0 +1,21 @@
+<h2>Reference to DOM elements</h2>
+
+<br>
+
+<p><span class="red-txt">BAD:</span> DO NOT store DOM elements in the scope because you can create huge memory leaks.</p>
+
+<h5 class="align-left" style="color: yellow;">Reason:</h5>
+<p class="align-left">If you store only one DOM element in the scope, the scope digester will find it as well as the parent and the parent of the parent. This means angular will go through complete DOM tree to check if its changed.</p>
+
+<br>
+
+<p class="align-left"><span class="green-txt">GOOD:</span> Using DOM elements in directives is correct.</p>
+
+<br>
+
+<pre><code data-trim contenteditable>
+$scope.ele = $('.ele'); //bad
+
+<div class="ele"></div> //will cause memory leak
+
+</code></pre>
