@@ -20,11 +20,14 @@
         "controller.html",
         "controllers-1.html",
         "controllers-2.html",
-        "controller-5.html",
         "controllers-3.html",
         "controllers-4.html"
     ],
     "services.html",
-    "directives.html",
+    [
+        "directives.html",
+        "directive-1.html",
+        "directive-2.html"
+    ],
     "filters.html"
 ]

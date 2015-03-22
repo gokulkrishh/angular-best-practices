@@ -1,19 +1,4 @@
-<h2>Know equivalent jquery selectors in angular(jqLite)</h2>
-<ul>
-	<li>on()</li>
-	<li>addClass()</li>
-	<li>removeClass()</li>
-	<li>bind()</li>
-	<li>unbind()</li>
-	<li>attr()</li>
-	<li>removeAttr()</li>
-	<li>parent()</li>
-	<li>children()</li>
-	<li>css() - Only retrieves inline-styles, does not call getComputedStyle()</li>
-	<li>val()</li>
-	<li>text()</li>
-	<li>append()</li>
-</ul>
-<br>
-<br>
-<p>For full list refer <a href="https://docs.angularjs.org/api/ng/function/angular.element" target="_blank">here</a>.</p>
+<h2>DOM manipulation</h2>
+
+<p><span class="red-txt">BAD:</span> Doing Dom manipulation inside a controller.</p>
+<p><span class="green-txt">GOOD:</span> Do it in directive instead.</p>
