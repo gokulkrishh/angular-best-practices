@@ -1,0 +1,21 @@
+<h2>Use angular components</h2>
+<br>
+<p><span class="green-txt">$timeout</span>, <span class="green-txt">$window</span> instead of <span class="red-txt">window</span>, <span class="red-txt">setTimeout</span> to avoid using $scope.$apply(); to bind scope.</p>
+
+<br>
+
+<pre><code data-trim contenteditable>
+$scope.myName = 'Gokul';
+
+//normal js function
+setTimeout(function () {
+	$scope.myName = 'Krishh';
+	//Angular is unaware of $scope change
+}, 2000);
+
+
+<div>{{myName}}</div> //Print myName
+</code></pre>
+
+
+<p><a href="http://plnkr.co/edit/N3vxF2MPADuf612Ko0Ku?p=preview" target="_blank">Demo</a></p>

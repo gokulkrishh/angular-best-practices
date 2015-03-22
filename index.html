@@ -15,7 +15,7 @@
 
 			<link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
 			
-			<link rel="stylesheet" href="../css/custom.css">
+			<link rel="stylesheet" href="css/custom.css">
 
 			<link rel="stylesheet" href="bower_components/reveal-highlight-themes/styles/monokai_sublime.css" id="highlight-theme">
 
@@ -64,6 +64,11 @@
 
 												
 														
+    <section data-html="slides/generator-install.html"></section>
+
+
+												
+														
     <section data-html="slides/folder-structure-1.html"></section>
 
 
@@ -82,20 +87,109 @@
 								
 						
 								
+										
+    <section data-html="slides/main-components.html"></section>
+
+
+								
+								
+						
+								
 								
 										<section>
 												
 														
-    <section data-html="slides/dependency-injection.html"></section>
+    <section data-html="slides/scope.html"></section>
 
 
 												
 														
-    <section data-html="slides/advantages-of-di.html"></section>
+    <section data-html="slides/scope-understand.html"></section>
+
+
+												
+														
+    <section data-html="slides/scope-1.html"></section>
+
+
+												
+														
+    <section data-html="slides/scope-2.html"></section>
+
+
+												
+														
+    <section data-html="slides/scope-3.html"></section>
+
+
+												
+														
+    <section data-html="slides/scope-4.html"></section>
 
 
 												
 										</section>
+								
+						
+								
+								
+										<section>
+												
+														
+    <section data-html="slides/controller.html"></section>
+
+
+												
+														
+    <section data-html="slides/controllers-1.html"></section>
+
+
+												
+														
+    <section data-html="slides/controllers-2.html"></section>
+
+
+												
+														
+    <section data-html="slides/controller-5.html"></section>
+
+
+												
+														
+    <section data-html="slides/controllers-3.html"></section>
+
+
+												
+														
+    <section data-html="slides/controllers-4.html"></section>
+
+
+												
+										</section>
+								
+						
+								
+										
+    <section data-html="slides/services.html"></section>
+
+
+								
+								
+						
+								
+										
+    <section data-html="slides/directives.html"></section>
+
+
+								
+								
+						
+								
+										
+    <section data-html="slides/filters.html"></section>
+
+
+								
 								
 						
 				</div>
@@ -131,13 +225,9 @@
 						// { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 						{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
 
-						{ src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+						{ src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]', '[data-transition]' ); } }
 					]
 				});
 			</script>
-			<!-- controldeck.js 
-			<script src="http://controldeck.aws.af.cm/socket.io/socket.io.js"></script>
-			<script src="http://controldeck.aws.af.cm/controldeck-slides.js"></script>
-			-->
 	</body>
 </html>

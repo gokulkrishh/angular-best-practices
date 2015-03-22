@@ -1,0 +1,23 @@
+<h2>Flash Of Unstyles Content (FOUC)</h2>
+<br>
+
+<p><span class="red-txt">BAD:</span> {{message}}</p>
+
+<pre><code data-trim contenteditable>
+$scope.message = 'Hello';
+
+//BAD
+<div>{{message}}</div> //will be printed when no data is loaded
+
+//GOOD
+
+<div ng-bind="message"></div> //Single binding
+
+<div ng-cloak>{{message}}</div> //Prevent showing of its raw (uncompiled) form
+
+</code></pre>
+
+
+
+
+
