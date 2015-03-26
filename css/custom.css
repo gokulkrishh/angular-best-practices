@@ -17,6 +17,11 @@
 	list-style-type: lower-hexadecimal;
 }
 
+
+a {
+	text-decoration: underline !important;
+}
+
 /* alignments */
 
 .align-left {

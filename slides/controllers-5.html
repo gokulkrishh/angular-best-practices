@@ -1,0 +1,20 @@
+<h2>Always use [] notation for listing dependencies</h2>
+<br>
+
+<pre><code data-trim contenteditable>
+//Bad
+angularApp.controller(function($scope) {
+	//Write something here
+});
+
+//Good
+angularApp.controller(['$scope', function($scope) { 
+	//Write something here
+}]);
+
+</code></pre>
+
+
+<br>
+<h5 class="align-left" style="color: yellow;">Reason:</h5>
+<p class="align-left">Angular get its dependencies from names of arguments, during minification the arguments in the function are converted to a, b, c ... So giving dependencies in [] notation helps angular to map its dependencies.</p>
