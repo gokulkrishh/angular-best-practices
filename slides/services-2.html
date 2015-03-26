@@ -1,0 +1,55 @@
+<h2>Use $q (promises)</h2>
+
+<p>Run functions asynchronously, and use their return values or exceptions when they are done processing</p>
+<br>
+<pre><code data-trim contenteditable>
+
+//set API base url to use through out the app
+app.constant('apiConfig', function () {
+	baseURL = 'https://api.github.com';
+});	
+
+//Services
+app.services('authAPI', ['$http', '$q', 'apiConfig', function ($http, $q, apiConfig) {
+	'use strict'; 
+
+this.signIn = function (data) {
+	var defered = $q.defer();
+
+	var url =  apiConfig + '/users'; // get base url from constant
+
+	$http.post({
+		url: url,
+		data : data
+	})
+	.success(function (data) {
+		defered.resolve(data);
+	})
+	.error(function (err) {
+		defered.resolve(err);
+	});
+
+	return defered.promises();
+};
+}]);
+
+//Controller
+app.controller('mainCtrl', ['$scope', 'authAPI', function () {
+	
+	$scope.getUserDetails = {
+		'email': email,
+		'password': password
+	};
+
+	//Call signIn API in authAPI service
+	authAPI.signIn($scope.getUserDetails)
+		.then(function (data) {
+			//success callback
+		},
+		function (err) {
+			//show error notification
+		});
+}]);
+</code></pre>
+
+<p><a href="https://docs.angularjs.org/api/ng/service/$q">More about $q</a></p>
