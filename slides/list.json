@@ -3,6 +3,7 @@
     [
         "folder-structure.html",
         "generator-install.html",
+        "folder-structure-2.html",
         "folder-structure-1.html",
         "modularity.html",
         "modularity-1.html"
@@ -34,6 +35,11 @@
         "directive-1.html",
         "directive-2.html"
     ],
-    "filters.html",
-    "tools.html"
+    [
+        "filters.html",
+        "filter-1.html"
+    ],
+    "tools.html",
+    "contribution-to-generator-smacss.html",
+    "thanks.html"
 ]
