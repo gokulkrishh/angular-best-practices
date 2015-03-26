@@ -33,3 +33,17 @@ a {
 .link-black {
 	color: #212121;
 }
+
+
+.contrib {
+	display: inline-block;
+  margin-top: -30px;
+  position: relative;
+  top: -35px;
+  right: -25px;
+}
+
+.contrib-2 {
+	position: relative;
+  left: -10px;
+}
