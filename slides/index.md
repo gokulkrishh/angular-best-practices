@@ -1,5 +1,5 @@
 
-# AngularJS Best Practises
+# AngularJS Best Practices
 
 ###By Gokul
 <ul>
