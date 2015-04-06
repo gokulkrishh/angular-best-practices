@@ -1,2 +1,3 @@
-# angular-best-practises
-Angular.js best practises
+# Angular Best Practices
+
+Link(http://gokulkrishh.github.io/angular-best-practises/)
